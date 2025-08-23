@@ -9,11 +9,14 @@ import {
 import React from "react";
 import ReactDOM from "react-dom/client";
 import BarChart from "./page/barChart/BarChart";
+import Calendar from "./page/calendar/Calendar";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="bar" element={<BarChart />} />
+      <Route path="calendar" element={<Calendar />} />
     </Route>
   )
 );
