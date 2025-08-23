@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TopBar from "./components/TopBar";
 import { getDesignTokens } from "./theme";
 import { Outlet } from "react-router";
-import SideBar from "components/SideBar";
+import SideBar from "./components/SideBar";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
