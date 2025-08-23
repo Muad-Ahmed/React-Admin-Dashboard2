@@ -8,9 +8,14 @@ import {
 } from "react-router";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import BarChart from "./page/barChart/BarChart";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<App />}></Route>)
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route path="bar" element={<BarChart />} />
+    </Route>
+  )
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
