@@ -16,6 +16,7 @@ import Form from "./page/form/Form";
 import Geography from "./page/geography/Geography";
 import Invoices from "./page/invoices/Invoices";
 import LineChart from "./page/lineChart/LineChart";
+import PieChart from "./page/pieChart/PieChart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route path="geography" element={<Geography />} />
       <Route path="invoices" element={<Invoices />} />
       <Route path="line" element={<LineChart />} />
+      <Route path="pie" element={<PieChart />} />
     </Route>
   )
 );
