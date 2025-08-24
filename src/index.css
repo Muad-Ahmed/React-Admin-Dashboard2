@@ -3,3 +3,32 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+
+
+/* ==== WebKit browsers (Chrome, Edge, Safari) ==== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #a5abb3; /* slightly darker track than GitHub default */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(27, 31, 35, 0.4); /* light translucent thumb */
+  border-radius: 4px;
+  border: 1px solid #e1e4e8; /* transparent border to slim the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(27, 31, 35, 0.6); /* darker on hover */
+}
+
+/* ==== Firefox only ==== */
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: thin; /* match thin WebKit width */
+    scrollbar-color: rgba(27, 31, 35, 0.4) #e1e4e8; /* thumb + track */
+  }
+}
