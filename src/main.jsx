@@ -11,6 +11,7 @@ import ReactDOM from "react-dom/client";
 import BarChart from "./page/barChart/BarChart";
 import Calendar from "./page/calendar/Calendar";
 import Contacts from "./page/contacts/Contacts";
+import FAQ from "./page/faq/FAQ";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="bar" element={<BarChart />} />
       <Route path="calendar" element={<Calendar />} />
       <Route path="contacts" element={<Contacts />} />
+      <Route path="faq" element={<FAQ />} />
     </Route>
   )
 );
