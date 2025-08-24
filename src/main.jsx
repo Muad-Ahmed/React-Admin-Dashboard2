@@ -15,6 +15,7 @@ import FAQ from "./page/faq/FAQ";
 import Form from "./page/form/Form";
 import Geography from "./page/geography/Geography";
 import Invoices from "./page/invoices/Invoices";
+import LineChart from "./page/lineChart/LineChart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="form" element={<Form />} />
       <Route path="geography" element={<Geography />} />
       <Route path="invoices" element={<Invoices />} />
+      <Route path="line" element={<LineChart />} />
     </Route>
   )
 );
