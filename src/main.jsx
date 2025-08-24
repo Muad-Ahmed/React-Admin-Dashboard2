@@ -14,6 +14,7 @@ import Contacts from "./page/contacts/Contacts";
 import FAQ from "./page/faq/FAQ";
 import Form from "./page/form/Form";
 import Geography from "./page/geography/Geography";
+import Invoices from "./page/invoices/Invoices";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="faq" element={<FAQ />} />
       <Route path="form" element={<Form />} />
       <Route path="geography" element={<Geography />} />
+      <Route path="invoices" element={<Invoices />} />
     </Route>
   )
 );
