@@ -12,6 +12,7 @@ import BarChart from "./page/barChart/BarChart";
 import Calendar from "./page/calendar/Calendar";
 import Contacts from "./page/contacts/Contacts";
 import FAQ from "./page/faq/FAQ";
+import Form from "./page/form/Form";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="calendar" element={<Calendar />} />
       <Route path="contacts" element={<Contacts />} />
       <Route path="faq" element={<FAQ />} />
+      <Route path="form" element={<Form />} />
     </Route>
   )
 );
