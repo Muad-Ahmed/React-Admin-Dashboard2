@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import { rows, columns } from "./data";
 import Header from "../../components/Header";
 
 function Contacts() {
@@ -8,6 +9,12 @@ function Contacts() {
       <Header
         title="CONTACTS"
         subTitle="List of Contacts for Future Reference"
+      />
+      <DataGrid
+        rows={rows}
+        // @ts-ignore
+        columns={columns}
+        showToolbar
       />
     </Box>
   );
