@@ -1,4 +1,5 @@
 import Row1 from "./Row1";
+import Row2 from "./Row2";
 import Button from "@mui/material/Button";
 import { DownloadOutlined } from "@mui/icons-material";
 import { Box, Stack, Typography } from "@mui/material";
@@ -31,6 +32,7 @@ const Dashboard = () => {
         </Box>
       </Stack>
       <Row1 />
+      <Row2 />
     </div>
   );
 };
