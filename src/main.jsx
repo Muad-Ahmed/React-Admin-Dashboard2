@@ -18,12 +18,13 @@ import Invoices from "./page/invoices/Invoices";
 import LineChart from "./page/lineChart/LineChart";
 import PieChart from "./page/pieChart/PieChart";
 import Team from "./page/team/Team";
+import Dashboard from "./page/dashboard/Dashboard";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="team" element={<Team />} />
-
+      <Route index element={<Dashboard />} />
       <Route path="bar" element={<BarChart />} />
       <Route path="calendar" element={<Calendar />} />
       <Route path="contacts" element={<Contacts />} />
