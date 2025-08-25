@@ -19,6 +19,7 @@ import LineChart from "./page/lineChart/LineChart";
 import PieChart from "./page/pieChart/PieChart";
 import Team from "./page/team/Team";
 import Dashboard from "./page/dashboard/Dashboard";
+import NotFound from "./page/notFound/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="invoices" element={<Invoices />} />
       <Route path="line" element={<LineChart />} />
       <Route path="pie" element={<PieChart />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
